@@ -1,11 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>A Toca Studios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Toca Studios</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#121212;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:2rem;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+}
+
+.logo{
+    width:180px;
+    max-width:80%;
+    margin-bottom:2rem;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+.subtitle{
+    font-size:1.2rem;
+    max-width:700px;
+    margin-bottom:2rem;
+    color:#d4d4d4;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#ff8c00;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e67e00;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:5rem 2rem;
+}
+
+h2{
+    margin-bottom:2rem;
+    text-align:center;
+    color:#ff8c00;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+}
+
+.card{
+    background:#1e1e1e;
+    padding:2rem;
+    border-radius:10px;
+}
+
+.card h3{
+    margin-bottom:1rem;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.partners{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1.5rem;
+}
+
+.partner{
+    background:#1e1e1e;
+    padding:1rem 2rem;
+    border-radius:8px;
+}
+
+.cta{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:2rem;
+    background:#0a0a0a;
+    color:#aaa;
+}
+</style>
 </head>
 <body>
-  <h1>A Toca Studios</h1>
-  <p>Landing page em construção.</p>
+
+<header>
+
+    <!-- SUBSTITUIR PELO LOGÓTIPO REAL -->
+    <!-- <img src="logo.png" class="logo" alt</h1>
+
+    <p class="subtitle">
+        Espaço criativo nos Açores dedicado à música,
+        streaming, formação, ensaio e eventos culturais.
+    </p>
+
+    <a href="#" class="btn">
+        Reservar Agora
+    </a>
+
+</header>
+
+<section>
+
+    <h2>Serviços</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🎸 Salas de Ensaio</h3>
+            <p>
+                Espaços preparados para bandas, músicos e
+                projetos artísticos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎥 Estúdio de Webcast</h3>
+            <p>
+                Streaming, podcasts, gravação de conteúdos
+                e transmissões online.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎧 Cabine DJ</h3>
+            <p>
+                Espaço dedicado à prática, gravação e
+                preparação de atuações.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎪 Eventos</h3>
+            <p>
+                Workshops, apresentações e iniciativas
+                culturais.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Sobre a A Toca</h2>
+
+    <div class="about">
+        <p>
+            A Toca é uma incubadora artística criada para apoiar
+            músicos, criadores e projetos culturais através da
+            disponibilização de espaços, recursos e oportunidades
+            de colaboração.
+        </p>
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Parceiros</h2>
+
+    <div class="partners">
+
+        <div class="partner">Thin Rockschool</div>
+        <div class="partner">Marca Pistola</div>
+        <div class="partner">Festival Tremor</div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>Reservas</h2>
+
+    <p style="margin-bottom:2rem;">
+        As reservas são geridas através da plataforma Jammed.
+    </p>
+
+    <a href="#" class="btn">
+        Reservar através da Jammed
+    </a>
+
+</section>
+
+<section class="cta">
+
+    <h2>Crowdfunding</h2>
+
+    <p style="margin-bottom:2rem;">
+        Estamos a preparar uma campanha para aquisição
+        de instrumentos e equipamentos de áudio para a
+        comunidade artística local.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>A Toca Studios © 2026</p>
+
+    <p>
+        Ponta Delgada · São Miguel · Açores
+    </p>
+
+</footer>
+
 </body>
 </html>
