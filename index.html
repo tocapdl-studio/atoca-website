@@ -14,9 +14,8 @@
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    /* Alterado para um cinza ligeiramente mais suave e moderno */
     background:#443a35; 
-    color:#222;
+    color:#f5f5f5; /* Alterado para claro, pois o fundo geral agora é escuro */
     line-height:1.6;
 }
 
@@ -49,7 +48,7 @@ header{
 h1{
     font-size:3rem;
     margin-bottom:1rem;
-    color: white; /* Garante que o H1 (se usar) seja visível no topo */
+    color: white;
 }
 
 .subtitle{
@@ -75,20 +74,20 @@ h1{
 }
 
 section{
-    max-width:100%; /* Permite que o fundo ocupe a largura toda se mudarmos a cor */
+    max-width:100%;
     margin:auto;
     padding:5rem 2rem;
+    color: #f5f5f5; /* Garante texto claro em todas as secções por defeito */
 }
 
-/* Criar um contentor interno para manter o alinhamento centralizado */
 .section-content {
     max-width: 1100px;
     margin: auto;
 }
 
-/* SUGESTÃO DE DESIGN: Alternar cores de fundo para quebrar o "branco puro" */
 section:nth-of-type(even) {
-    background-color: #45403d; /* Um cinza ligeiramente mais escuro para criar contraste */
+    background-color: #45403d;
+    color: #ffffff; /* Texto totalmente branco nas secções alternadas */
 }
 
 h2{
@@ -105,19 +104,21 @@ h2{
 
 .card{
     background:white;
-    box-shadow:0 4px 12px rgba(0,0,0,.05); /* Sombra mais suave */
+    box-shadow:0 4px 12px rgba(0,0,0,.2); /* Sombra ligeiramente mais visível no fundo escuro */
     padding:2rem;
     border-radius:10px;
+    color: #222; /* Mantém o texto dentro dos cartões escuro para contrastar com o fundo branco do cartão */
 }
 
 .card h3{
     margin-bottom:1rem;
 }
 
-.about{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    color: #e0e0e0; /* Texto do "Sobre" com um cinza claro suave */
 }
 
 .card-gif{
@@ -136,13 +137,14 @@ h2{
 
 .partner{
     background:#1e1e1e;
-    color: white; /* Adicionado para garantir leitura do nome dos parceiros */
+    color: white;
     padding:1rem 2rem;
     border-radius:8px;
 }
 
 .cta{
     text-align:center;
+    color: #ffffff; /* Garante texto branco na zona de Reservas e Crowdfunding */
 }
 
 footer{
@@ -197,13 +199,13 @@ footer{
                  <img src="images/EquipamentoExtra.gif" class="card-gif" alt="Sala de webcast">
                 <h3>Serviços Complementares</h3>
                 <p>
-                    Instrumentos, equipamento audio, consumíveis e especialistas (musicos, técnicos, tutores...).
+                    Instrumentos, equipamento audio, consumíveis e especialistas (músicos, técnicos, tutores...).
                 </p>
             </div>
             <div class="card">
                 <h3>🎪 Incubadora</h3>
                 <p>
-                    Salão com 80m2, formação workshops, apresentações, convivio e outros pequenos eventos.
+                    Salão com 90m2, para Workshops, apresentações e eventos culturais privados.
                 </p>
             </div>
         </div>
@@ -214,14 +216,12 @@ footer{
     <div class="section-content">
         <h2>Sobre a A Toca</h2>
         <div class="about">
-            <p>
-                Por saber o que é ensaiar em locais desadequados,sujos, ruidosos e em sítios duvidosos ou longe de tudo.
-                Por saber o quão difícil é, para um amador, ter de conciliar a vida pessoal,estudos e trabalho com os ensaios. A Toca focou-se na localização,
-                flexibilidade de horário, qualidade acústica e segurança. 
+            <p style="margin-bottom: 1.5rem;">
+                Por saber o que é ensaiar em locais desadequados, sujos, ruidosos e em sítios duvidosos ou longe de tudo.
+                Por saber o quão difícil é, para um amador, ter de conciliar a vida pessoal, estudos e trabalho com os ensaios, A Toca focou-se na localização, flexibilidade de horário, qualidade acústica e segurança. 
             </p>
             <p>
                 A Toca pretende ser um espaço facilitador da criatividade, uma plataforma para agregação e desenvolvimento de talentos. Queremos estar no epicentro da cena musical local.
-            
             </p>
         </div>
     </div>
