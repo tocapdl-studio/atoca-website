@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Toca - Estudios em Ponta Delgada </title>
+<title>A Toca - Estúdios em Ponta Delgada</title>
 
 <style>
 *{
@@ -14,13 +14,13 @@
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#f5f5f5;
+    /* Alterado para um cinza ligeiramente mais suave e moderno */
+    background:#f8f9fa; 
     color:#222;
     line-height:1.6;
 }
 
 header{
-   
     min-height:100vh;
     display:flex;
     flex-direction:column;
@@ -39,7 +39,6 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .logo{
@@ -50,6 +49,7 @@ header{
 h1{
     font-size:3rem;
     margin-bottom:1rem;
+    color: white; /* Garante que o H1 (se usar) seja visível no topo */
 }
 
 .subtitle{
@@ -75,9 +75,20 @@ h1{
 }
 
 section{
-    max-width:1100px;
+    max-width:100%; /* Permite que o fundo ocupe a largura toda se mudarmos a cor */
     margin:auto;
     padding:5rem 2rem;
+}
+
+/* Criar um contentor interno para manter o alinhamento centralizado */
+.section-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* SUGESTÃO DE DESIGN: Alternar cores de fundo para quebrar o "branco puro" */
+section:nth-of-type(even) {
+    background-color: #f1f3f5; /* Um cinza ligeiramente mais escuro para criar contraste */
 }
 
 h2{
@@ -94,7 +105,7 @@ h2{
 
 .card{
     background:white;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    box-shadow:0 4px 12px rgba(0,0,0,.05); /* Sombra mais suave */
     padding:2rem;
     border-radius:10px;
 }
@@ -125,6 +136,7 @@ h2{
 
 .partner{
     background:#1e1e1e;
+    color: white; /* Adicionado para garantir leitura do nome dos parceiros */
     padding:1rem 2rem;
     border-radius:8px;
 }
@@ -144,127 +156,98 @@ footer{
 <body>
 
 <header>
-
-        <img src="logo.png" class="logo" alt="Logo d'A Toca"</h1>
+    <img src="logo.png" class="logo" alt="Logo d'A Toca">
 
     <p class="subtitle">
-        Laboratório criativo para musicos, bandas, DJs, streamers e criativos no geral.
-        </p>
-     <p class="subtitle">
-        Salas de Ensaio, estudios de webcast, espaço para formação e eventos culturais.
-        </p>
+        Laboratório criativo para músicos, bandas, DJs, streamers e criativos no geral.
+    </p>
+    <p class="subtitle">
+        Salas de Ensaio, estúdios de webcast, espaço para formação e eventos culturais.
+    </p>
 
     <a href="#" class="btn">
         Reservar Agora
     </a>
-
 </header>
 
 <section>
+    <div class="section-content">
+        <h2>Serviços</h2>
+        <div class="services">
+            <div class="card">
+                <img src="images/3SalasEnsaio.gif" class="card-gif" alt="Sala de Ensaio">
+                <h3>Salas de Ensaio</h3>
+                <p>
+                    3 cabines (16, 26 e 27m2). Insonorizadas para eliminar interferências com o exterior, acusticamente tratadas para melhor qualidade de som. Com backline (bateria, amplificadores e PA).
+                </p>
+                <p style="margin-top: 1rem; font-weight: bold; color: #ff8c00;">
+                    Preços à hora por sala entre 14 e 25€
+                </p>
+            </div>
 
-    <h2>Serviços</h2>
+            <div class="card">
+                <h3>🎥 Estúdio de Webcast</h3>
+                <p>
+                    Streaming, podcasts, gravação de conteúdos e transmissões online.
+                </p>
+            </div>
 
-    <div class="services">
-
-        <div class="card">
-
-            
-            <img src="images/3SalasEnsaio.gif"
-                 class="card-gif"
-                 alt="Sala de Ensaio">
-
-            <h3> Salas de Ensaio</h3>
-            <p>
-                3 cabines (16, 26 e 27m2). Insonorizadas para eliminar interferencias com o exterior, acusticamente tratadas para melhor qualidade de som.
-                Com backline (bateria, amplificadores e PA).
-            </p>
-            <p>
-                Preços à hora por sala entre 14 e 25€
-            </p>
+            <div class="card">
+                <h3>🎪 Incubadora</h3>
+                <p>
+                    Salão com 90m2, para Workshops, apresentações e eventos culturais privados.
+                </p>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>🎥 Estúdio de Webcast</h3>
-            <p>
-                Streaming, podcasts, gravação de conteúdos
-                e transmissões online.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🎪 Incubadora</h3>
-            <p>
-                Salão com 90m2, para Workshops, apresentações e eventos culturais privados.
-            </p>
-        </div>
-
     </div>
-
 </section>
 
 <section>
+    <div class="section-content">
+        <h2>Sobre a A Toca</h2>
+        <div class="about">
+            <p>
+                A Toca é uma incubadora artística criada para apoiar músicos, criadores e projetos culturais através da disponibilização de espaços, recursos e oportunidades de colaboração.
+            </p>
+        </div>
+    </div>
+</section>
 
-    <h2>Sobre a A Toca</h2>
+<section>
+    <div class="section-content">
+        <h2>Parceiros</h2>
+        <div class="partners">
+            <div class="partner">Thin Rockschool</div>
+            <div class="partner">Marca Pistola</div>
+            <div class="partner">Festival Tremor</div>
+        </div>
+    </div>
+</section>
 
-    <div class="about">
-        <p>
-            A Toca é uma incubadora artística criada para apoiar
-            músicos, criadores e projetos culturais através da
-            disponibilização de espaços, recursos e oportunidades
-            de colaboração.
+<section class="cta">
+    <div class="section-content">
+        <h2>Reservas</h2>
+        <p style="margin-bottom:2rem;">
+            As reservas são geridas através da plataforma Jammed.
+        </p>
+        <a href="#" class="btn">
+            Reservar através da Jammed
+        </a>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="section-content">
+        <h2>Crowdfunding</h2>
+        <p style="margin-bottom:2rem;">
+            Estamos a preparar uma campanha para aquisição de instrumentos e equipamentos de áudio para a comunidade artística local.
         </p>
     </div>
-
-</section>
-
-<section>
-
-    <h2>Parceiros</h2>
-
-    <div class="partners">
-
-        <div class="partner">Thin Rockschool</div>
-        <div class="partner">Marca Pistola</div>
-        <div class="partner">Festival Tremor</div>
-
-    </div>
-
-</section>
-
-<section class="cta">
-
-    <h2>Reservas</h2>
-
-    <p style="margin-bottom:2rem;">
-        As reservas são geridas através da plataforma Jammed.
-    </p>
-
-    <a href="#" class="btn">
-        Reservar através da Jammed
-    </a>
-
-</section>
-
-<section class="cta">
-
-    <h2>Crowdfunding</h2>
-
-    <p style="margin-bottom:2rem;">
-        Estamos a preparar uma campanha para aquisição
-        de instrumentos e equipamentos de áudio para a
-        comunidade artística local.
-    </p>
-
 </section>
 
 <footer>
-
     <p>A Toca Incubadora Artística, Unipessoal Lda. © 2026</p>
-
-    <p>
-        Ponta Delgada · São Miguel · Açores
-    </p>
-
+    <p>Ponta Delgada · São Miguel · Açores</p>
 </footer>
 
 </body>
