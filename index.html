@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- ----------------------------SECÇÃO PARA CÓDIGO CSS----------------------------- -->
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
@@ -153,11 +155,64 @@ footer{
     background:#0a0a0a;
     color:#aaa;
 }
+
+    
+.navbar{
+    position:absolute;
+    top:20px;
+    right:40px;
+    display:flex;
+    gap:2rem;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#ff8c00;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+socials{
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.social-icon{
+    width:64px;
+    height:64px;
+    transition:.2s;
+}
+
+.social-icon:hover{
+    transform:scale(1.15);
+}
+
+    
 </style>
 </head>
 <body>
-
+    
+<!-- --------------------INICIO DA PÁGINA PROPRIAMENTE DITA----------------------------- -->
+    
 <header>
+    
+nav class="navbar">
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contactos">Contactos</a>
+    <a href="#reservas">Reservar</a>
+</nav>
+
     <img src="logo.png" class="logo" alt="Logo d'A Toca">
 
     <p class="subtitle">
@@ -177,7 +232,7 @@ footer{
 
 </header>
 
-<section>
+<section id="servicos">
     <div class="section-content">
         <h2>Serviços</h2>
         <div class="services">
@@ -217,7 +272,7 @@ footer{
     </div>
 </section>
 
-<section>
+<section id="sobre">
     <div class="section-content">
         <h2>Sobre a A Toca</h2>
         <div class="about">
@@ -245,7 +300,7 @@ footer{
     </div>
 </section>
 
-<section class="cta">
+<section id="reservas" class="cta">
     <div class="section-content">
         <h2>Reservas</h2>
         <p style="margin-bottom:2rem;">
@@ -271,10 +326,58 @@ footer{
     </div>
 </section> -->
 
-<footer>
-    <p>A Toca Incubadora Artística, Unipessoal Lda. © 2026</p>
-    <p>Ponta Delgada · São Miguel · Açores</p>
+
+<section id="contactos">
+
+    <div class="section-content">
+
+        <h2>Contactos</h2>
+
+        <div class="about">
+
+            <p style="margin-bottom:2rem;">
+                Tens dúvidas ou pretendes saber mais sobre os nossos serviços?
+            </p>
+
+            <p style="margin-bottom:2rem;">
+                mailto:geral@atocastudios.pt
+                    Enviar Email
+                </a>
+            </p>
+
+            <div class="socials">
+
+                <a href="LINK_FACE                 <img src="images/facebook.png"
+     </a>
+
+                <a href="LINK_DISCORD"
+                   targetes/discord.png"
+                         alta href="LINK_INSTAGRAM"
+           <img src="images/instagram.png"
+                         alt="Instagram</div>
+
+    </div>
+
+</section>
+
+    
+
+footer>
+
+    <p>
+        A Toca Incubadora Artística, Unipessoal Lda. © 2026
+    </p>
+
+    <p>
+        Ponta Delgada · São Miguel · Açores
+    </p>
+
+    <p>
+        tocapdl@gmail.pt
+    </p>
+
 </footer>
+
 
 </body>
 </html>
