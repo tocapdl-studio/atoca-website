@@ -110,11 +110,17 @@ h2{
     padding:2rem;
     border-radius:10px;
     color: #222; /* Mantém o texto dentro dos cartões escuro para contrastar com o fundo branco do cartão */
+
+    display:flex;
+    flex-direction:column;
 }
+
 
 .card h3{
     margin-bottom:1rem;
+  min-height:70px;
 }
+
 
 .about {
     text-align: center;
@@ -124,11 +130,13 @@ h2{
 }
 
 .card-gif{
-    width:180px;
-    height:auto;
+    height:140px;
+    width:auto;
     display:block;
     margin:0 auto 1rem auto;
+    object-fit:contain;
 }
+
   
 .partners{
     display:flex;
@@ -257,15 +265,15 @@ html{
             
             <div class="card">
                  <img src="images/Extras.gif" class="card-gif" alt="Sala de webcast">
-                <h3>Serviços Complementares</h3>
+                <h3>Serviços Extra</h3>
                 <p>
                     Instrumentos, equipamento audio, consumíveis e especialistas (músicos, técnicos, tutores...).
                 </p>
             </div>
             <div class="card">
-                <h3>🎪 Incubadora</h3>
+                <h3>🎪 Incubadora Artística</h3>
                 <p>
-                    Salão com 90m2 para: Formação, tertúlias, lançamentos, apresentações e eventos culturais.
+                    Salão multifuncional com 90m² para formação, workshops, tertúlias, apresentações e eventos culturais.
                 </p>
             </div>
         </div>
@@ -393,11 +401,7 @@ html{
     </p>
 
     <p>
-        Ponta Delgada · São Miguel · Açores
-    </p>
-
-    <p>
-        tocapdl@gmail.pt
+        toca.pdl@gmail.pt
     </p>
 
 </footer>
